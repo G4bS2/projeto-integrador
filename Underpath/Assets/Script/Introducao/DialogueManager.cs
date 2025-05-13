@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // ou TMPro se estiver usando TextMeshPro
+using UnityEngine.SceneManagement;
+
+
 
     [System.Serializable]
 public class DialogueLine
+
 {
+    public string nextSceneName;
     public string speaker; // "A" ou "B"
     public string text;
 }
 
 public class DialogueManager : MonoBehaviour
 {
+    public string nextSceneName;
     public GameObject leftPanel;
     public GameObject rightPanel;
 
@@ -37,11 +43,14 @@ public class DialogueManager : MonoBehaviour
     void ShowNextLine()
     {
         if (currentLine >= dialogueLines.Length)
-        {
-            leftPanel.SetActive(false);
-            rightPanel.SetActive(false);
-            return;
-        }
+{
+    leftPanel.SetActive(false);
+    rightPanel.SetActive(false);
+    
+    // Carregar a próxima cena
+    SceneManager.LoadScene(nextSceneName);
+    return;
+}
 
         DialogueLine line = dialogueLines[currentLine];
 

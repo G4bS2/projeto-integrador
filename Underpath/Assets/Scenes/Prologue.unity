@@ -167,14 +167,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c40959c38b764242a0fecfd1b47e5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: Game
   leftPanel: {fileID: 1727899185}
   rightPanel: {fileID: 1532672124}
   leftText: {fileID: 980185168}
   rightText: {fileID: 1047123657}
   dialogueLines:
-  - speaker: A
+  - nextSceneName: 
+    speaker: A
     text: 'oi '
-  - speaker: B
+  - nextSceneName: 
+    speaker: B
     text: ola
 --- !u!1 &178852539
 GameObject:
@@ -640,7 +643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727899187
