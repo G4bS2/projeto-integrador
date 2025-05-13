@@ -161,7 +161,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walk Front
+  m_Name: k down
   m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions:
@@ -175,7 +175,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1161e31383c9e404fb96fba400efa273, type: 2}
+  m_Motion: {fileID: 7400000, guid: 803149f5731a6cf41a736116e26dfd98, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
